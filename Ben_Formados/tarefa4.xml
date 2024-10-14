@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquivo xmlns:pr="proxectos" xmlns:em="empregados">
+    <pr:proxecto>
+        <pr:id>PJ001</pr:id>
+        <pr:nome>Sistema de Xestion</pr:nome>
+        <pr:data_inicio>2023-05-01</pr:data_inicio>
+        <pr:data_fin>2024-01-15</pr:data_fin>
+    </pr:proxecto>
+    <pr:proxecto>
+        <pr:id>PJ002</pr:id>
+        <pr:nome>Aplicacion Mobil</pr:nome>
+        <pr:data_inicio>2023-07-20</pr:data_inicio>
+        <pr:data_fin>2024-03-30</pr:data_fin>
+    </pr:proxecto>
+    <em:empregado>
+        <em:id>EMP001</em:id>
+        <em:nome>Antón López</em:nome>
+        <em:departamento>Desenvolvemento</em:departamento>
+    </em:empregado>
+    <em:empregado>
+        <em:id>EMP002</em:id>
+        <em:nome>María González</em:nome>
+        <em:departamento>Deseño</em:departamento>
+    </em:empregado>
+</arquivo>

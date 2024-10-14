@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arbores_subtopricais>
+    <arbore>
+        <nome>Litchi</nome>
+        <variedade>Kway may pink</variedade>
+        <cidade_orixe>Filipinas</cidade_orixe>
+        <cor_fruto>Rosa</cor_fruto>
+        <maduracion>Agosto</maduracion>
+        <rego>Diario</rego>
+        <precioKg>3,50€</precioKg>
+    </arbore>
+    <arbore>
+        <nome>Longan</nome>
+        <variedade>Champoo</variedade>
+        <cidade_orixe>China</cidade_orixe>
+        <cor_fruto>Marrón</cor_fruto>
+        <maduracion>Octubre</maduracion>
+        <rego>Diario</rego>
+        <precioKg>2,50€</precioKg>
+    </arbore>
+    <arbore>
+        <nome>Litchi</nome>
+        <variedade>Mauritius</variedade>
+        <cidade_orixe>Florida</cidade_orixe>
+        <cor_fruto>Rojo</cor_fruto>
+        <maduracion>Agosto</maduracion>
+        <rego>Diario</rego>
+        <precioKg>3€</precioKg>
+    </arbore>
+</arbores_subtopricais>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaventas [
+    <!ELEMENT listaventas (venta+)>
+    <!ELEMENT venta (importe, comprador, vendedor, fecha?, codigofactura)>
+        <!ELEMENT importe (#PCDATA)>
+        <!ELEMENT comprador (#PCDATA)>
+        <!ELEMENT vendedor (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT codigofactura (#PCDATA)>
+]>
+<listaventas>
+    <venta>
+        <importe>5000€</importe>
+        <comprador>Manuela</comprador>
+        <vendedor>Paco</vendedor>
+        <codigofactura>1a</codigofactura>
+    </venta>
+    <venta>
+        <importe>2€</importe>
+        <comprador>Pepe</comprador>
+        <vendedor>Paca</vendedor>
+        <fecha>23/03/2022</fecha>
+        <codigofactura>2b</codigofactura>
+    </venta>
+</listaventas>

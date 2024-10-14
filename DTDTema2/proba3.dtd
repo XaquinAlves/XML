@@ -1,0 +1,5 @@
+<!ELEMENT correos (email)+>
+<!ELEMENT email (destinatario,asunto,corpo)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT corpo (#PCDATA)>

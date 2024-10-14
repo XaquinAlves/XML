@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<biblioteca>
+    <libro>
+        <título>lenguajes de marcas</título>
+        <autor>Autor 1</autor>
+    </libro>
+    <libro>
+        <título>sistemas informaticos</título>
+        <autor>Autor 2</autor>
+    </libro>
+</biblioteca>
+<!--O elemento raíz é biblioteca-->

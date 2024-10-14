@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensaxesTexto [
+    <!ELEMENT mensaxesTexto (mensaxe*)>
+    <!ELEMENT mensaxe (numTlf, dataEnvio, horaEnvio, contido)>
+        <!ELEMENT numTlf (#PCDATA)>
+        <!ELEMENT dataEnvio (#PCDATA)>
+        <!ELEMENT horaEnvio (#PCDATA)>
+        <!ELEMENT contido (#PCDATA)>
+]>
+
+<mensaxesTexto>
+    <mensaxe>
+        <numTlf></numTlf>
+        <dataEnvio></dataEnvio>
+        <horaEnvio></horaEnvio>
+        <contido></contido>
+    </mensaxe>
+</mensaxesTexto>

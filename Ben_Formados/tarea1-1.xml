@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mamiferos>
+    <animal nome="Lobo comun">
+        <especie>Canis lupus</especie>
+        <familia>Canidae</familia>
+    </animal>
+</mamiferos>

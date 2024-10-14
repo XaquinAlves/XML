@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <text>
+                A
+                  a
+        a
+            A
+    </text>
+    <text xml:space="preserve">
+                 A
+                  a
+        a
+            A       
+    </text>
+    <text xml:space="default">
+                 A
+                  a
+        a
+            A       
+    </text>
+</document>

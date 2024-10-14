@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libro ISBN="9788410183841">
+        <titulo>Un detective en Virginia</titulo>
+        <anoPublicacion>2024</anoPublicacion>
+        <editorial>Siruela</editorial>
+        <autor>Melville Davison Post</autor>
+        <descricion xml:lang="es">Los mejores casos de un detective legendario reunidos en un solo
+            volumen
+            Un personaje único entre los detectives de ficción, una creación tan original como
+            Sherlock Holmes.
+            «El tío Abner es la mayor contribución estadounidense a la novela detectivesca, solo
+            superada por el Auguste Dupin de Poe».</descricion>
+    </libro>
+    <libro ISBN="9789566247623">
+        <titulo>El humano futuro</titulo>
+        <anoPublicacion>2024</anoPublicacion>
+        <editorial>DEBATE</editorial>
+        <autor>Pedro Maldonado</autor>
+        <descricion xml:lang="es">Una indagación sobre la relación entre el cerebro y el desarrollo
+            humano.
+            El rasgo más distintivo del cerebro de los mamíferos, especialmente relevante en los
+            humanos, es la corteza cerebral.
+            Este libro del profesor Pedro Maldonado, autor del exitoso Por qué tenemos el cerebro en
+            la cabeza explora cómo su expansión durante la evolución
+            permitió un aumento significativo en la cantidad de neuronas y el desarrollo de
+            habilidades cognitivas complejas</descricion>
+        <descricion xml:lang="gl">Unha investigación sobre a relación entre o cerebro e o
+            desenvolvemento humano.
+            A característica máis distintiva do cerebro dos mamíferos, especialmente relevante nos
+            humanos, é a cortiza cerebral.
+            Este libro do profesor Pedro Maldonado, autor do exitoso Por que temos o cerebro na
+            cabeza, explora como a súa expansión durante a evolución
+            permitiu un aumento significativo do número de neuronas e o desenvolvemento de
+            capacidades cognitivas complexas.</descricion>
+    </libro>
+</biblioteca>
