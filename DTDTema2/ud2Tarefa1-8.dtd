@@ -11,3 +11,4 @@
             <!ATTLIST Q id ID #REQUIRED>
             <!ELEMENT QTEXT (#PCDATA)>
             <!ELEMENT A (#PCDATA)>
+            
