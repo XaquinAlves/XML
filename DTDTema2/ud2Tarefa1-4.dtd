@@ -1,0 +1,6 @@
+<!ELEMENT declaraciones (constante, tipo_de_dato?, variable+ )>
+    <!ELEMENT constante (#PCDATA)>
+        <!ATTLIST constante valor CDATA #REQUIRED>
+    <!ELEMENT tipo_de_dato (#PCDATA)>
+    <!ELEMENT variable (#PCDATA)>
+        <!ATTLIST variable tipo CDATA #IMPLIED>

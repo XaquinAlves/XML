@@ -1,0 +1,7 @@
+<!ELEMENT agenda (persona)+>
+    <!ELEMENT persona (nombre, tlf)>
+        <!ATTLIST persona id CDATA #IMPLIED>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT tlf (#PCDATA)>
+<!-- Cambiamos o atributo id de #REQUIRED a #IMPLIED para que
+o documento esté validado-->

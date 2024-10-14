@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE declaraciones SYSTEM "ud2Tarefa1-4.dtd" >
+<declaraciones>
+    <constante valor="3.141592">PI</constante>
+    <variable tipo="real">radio</variable>
+    <variable>area</variable>
+    <variable>longitud</variable>
+</declaraciones>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "ud2Tarefa1-5b.dtd">
+<agenda>
+    <persona>
+        <nombre>Rosa Ríos</nombre>
+        <tlf>945345678</tlf>
+    </persona>
+    <persona>
+        <nombre>Pedro Pereira</nombre>
+        <tlf>984837659</tlf>
+    </persona>
+</agenda>

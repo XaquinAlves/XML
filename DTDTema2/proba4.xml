@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cursos>
+    <nomeEmpresa></nomeEmpresa>
+    <curso codigo="C1" nome="Curso" dataInicio="9/9-1999" nivel="baixo"></curso>
+    <curso codigo="C2" nome="Curso2" dataInicio="9/9-1999" nivel="medio"></curso>
+    <alumnos>
+        <alumno cursos="C1">
+            <nome>Pepito</nome>
+            <apelidos>Mcfly</apelidos>
+            <telefono>666666666</telefono>
+        </alumno>
+        <alumno cursos="C1 C2">
+            <nome>Juanito</nome>
+            <apelidos>Tercero</apelidos>
+        </alumno>
+    </alumnos>
+</cursos>

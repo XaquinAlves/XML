@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE listaventas [
-    <!ELEMENT listaventas (venta+)>
-    <!ELEMENT venta (importe, comprador, vendedor, fecha?, codigofactura)>
-        <!ELEMENT importe (#PCDATA)>
-        <!ELEMENT comprador (#PCDATA)>
-        <!ELEMENT vendedor (#PCDATA)>
-        <!ELEMENT fecha (#PCDATA)>
-        <!ELEMENT codigofactura (#PCDATA)>
-]>
+<!DOCTYPE listaventas SYSTEM "ud2Tarefa1-2.dtd">
 <listaventas>
     <venta>
         <importe>5000€</importe>

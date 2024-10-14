@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedidos SYSTEM "ud2Tarefa1-3.dtd">
+
+<pedidos>
+    <pedido>
+        <codigo>c1</codigo>
+        <cantidade>7</cantidade>
+    </pedido>
+    <pedido>
+        <codigo>c2</codigo>
+        <cantidade>5</cantidade>
+        <peso>1kg</peso>
+    </pedido>
+</pedidos>

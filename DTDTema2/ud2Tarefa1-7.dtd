@@ -1,0 +1,13 @@
+<!ELEMENT cv (presentacion, ( datos_academicos | experiencia_laboral)+, (lectura|deportes|otros)*,referencias*)>
+<!-- Esta linea indica que hay un elemento raiz chamado cv,
+que conten obligatoriamente un elemento presentacion, como
+minimo un elemento datos_academicos ou experiencia_laboral,
+podendo conter multiples destes,e pode ou non conter elementos
+lectura, deporte, otros e referencias-->
+    <!ELEMENT presentacion (#PCDATA)>
+    <!ELEMENT datos_academicos (#PCDATA)>
+    <!ELEMENT experiencia_laboral (#PCDATA)>
+    <!ELEMENT lecutra (#PCDATA)>
+    <!ELEMENT deportes (#PCDATA)>
+    <!ELEMENT otros (#PCDATA)>
+    <!ELEMENT referencias (#PCDATA)>

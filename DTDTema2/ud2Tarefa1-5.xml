@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "ud2Tarefa1-5.dtd">
+<agenda>
+    <persona id="1">
+        <nombre>Rosa Ríos</nombre>
+        <tlf>945345678</tlf>
+    </persona>
+    <persona id="2">
+        <nombre>Pedro Pereira</nombre>
+        <tlf>984837659</tlf>
+    </persona>
+</agenda>
+
+<!--Tuvemos que por o atributo id en cada elemento persoa
+para que o documento este validado -->
+<!--a)No caso dos atributos ID, so permiten caracteres NMTOKEN
+polo ques so pode ter os caracteres permitidos por XLM: letras,
+dixitos,(-),(_),(:) e (.). Non pode empezar por numero, ter 
+espazos ou caracteres especiais.Tamen, os valores deben ser 
+unicos en todo o documento XML-->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv SYSTEM "ud2Tarefa1-7.dtd">
+<cv>
+    <presentacion>Ola que tal</presentacion>
+    <datos_academicos>ESO 2015</datos_academicos>
+    <datos_academicos>BACH 2017</datos_academicos>
+    <deportes>Piraguismo</deportes>
+    <referencias>Casa Mariano</referencias>
+</cv>
