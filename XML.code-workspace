@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "XML",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange"
+	}
+}
