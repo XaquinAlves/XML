@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rede_investigacion  SYSTEM "tarefa2.dtd">
+<rede_investigacion>
+    <cientifico>
+        <nome EID="A111">Juan</nome>
+        <colaboradores cEID="B222 C333"></colaboradores>
+    </cientifico>
+    <cientifico>
+        <nome EID="B222">Manuel</nome>
+        <colaboradores cEID="A111" />
+    </cientifico>
+    <cientifico>
+        <nome EID="C333">Ana</nome>
+        <colaboradores cEID="A111" />
+    </cientifico>
+</rede_investigacion>

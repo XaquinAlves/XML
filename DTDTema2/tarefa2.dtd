@@ -1,0 +1,6 @@
+<!ELEMENT rede_investigacion (cientifico)+>
+    <!ELEMENT cientifico (nome, colaboradores)>
+        <!ELEMENT nome (#PCDATA)>
+            <!ATTLIST nome EID ID #REQUIRED>
+        <!ELEMENT colaboradores EMPTY>
+            <!ATTLIST colaboradores cEID IDREFS #REQUIRED>
