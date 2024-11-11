@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="proba3.xsd">
+    <nome>Ramon</nome>
+    <idade>34</idade>
+    <altura>1.78</altura>
+    <data_nac>2004-10-09</data_nac>
+    <conduce>false</conduce>
+    <hora_llegada>12:30:00</hora_llegada>
+</alumno>

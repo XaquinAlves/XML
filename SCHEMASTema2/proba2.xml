@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aviso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="proba2.xsd">
+    <titulo>
+        Aviso 1
+    </titulo>
+    <parrafo>Descripcion 1</parrafo>
+    <parrafo>Descripcion 2</parrafo>
+    <grafico>Foto</grafico>
+    <comentario>A</comentario>
+</aviso>

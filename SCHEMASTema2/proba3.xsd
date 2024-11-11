@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nome" type="xs:string"></xs:element>
+                <xs:element name="idade" type="xs:integer"></xs:element>
+                <xs:element name="altura" type="xs:double"></xs:element>
+                <xs:element name="data_nac" type="xs:date"></xs:element>
+                <xs:element name="conduce" type="xs:boolean"></xs:element>
+                <xs:element name="hora_llegada" type="xs:time"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
