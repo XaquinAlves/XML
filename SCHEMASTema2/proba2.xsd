@@ -11,7 +11,16 @@
                 </xs:element>
                 <xs:element name="parrafo" maxOccurs="2"></xs:element>
                 <xs:element name="grafico"></xs:element>
-                <xs:element name="comentario"></xs:element>
+                <xs:element name="comentario">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="autor" type="xs:string"/>
+                                <xs:attribute name="fecha" type="xs:date"></xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

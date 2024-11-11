@@ -6,7 +6,7 @@
             <xs:sequence>
                 <xs:element name="nome" type="xs:string"></xs:element>
                 <xs:element name="idade" type="xs:integer"></xs:element>
-                <xs:element name="altura" type="xs:double"></xs:element>
+                <xs:element name="altura" type="xs:decimal"></xs:element>
                 <xs:element name="data_nac" type="xs:date"></xs:element>
                 <xs:element name="conduce" type="xs:boolean"></xs:element>
                 <xs:element name="hora_llegada" type="xs:time"></xs:element>
