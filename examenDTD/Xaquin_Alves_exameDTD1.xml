@@ -1,0 +1,33 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE facturas SYSTEM "Xaquin_Alves_exameDTD1.dtd">
+<facturas>
+    <factura numFactura="A00003401">
+        <data>01/01/2019</data>
+        <lineaFactura>
+            <producto>Document1</producto>
+            <cantidade>1</cantidade>
+            <precio>100</precio>
+            <total>100</total>
+        </lineaFactura>
+        <lineaFactura>
+            <producto>Document2</producto>
+            <cantidade>1</cantidade>
+            <precio>50</precio>
+            <total>50</total>
+        </lineaFactura>
+        <lineaFactura>
+            <producto>Document3</producto>
+            <cantidade>2</cantidade>
+            <precio>50</precio>
+            <total>100</total>
+        </lineaFactura>
+        <lineaFactura>
+            <producto>Document4</producto>
+            <cantidade>1</cantidade>
+            <precio>100</precio>
+            <total>100</total>
+        </lineaFactura>
+        <cliente nome="John Smith" email="jh@email.com" />
+        <totalFactura>350</totalFactura>
+    </factura>
+</facturas>

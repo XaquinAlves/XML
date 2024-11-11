@@ -1,0 +1,13 @@
+<!ELEMENT facturas (factura)*>
+    <!ELEMENT factura (data,lineaFactura+,cliente,totalFactura)>
+        <!ATTLIST factura numFactura ID #REQUIRED>
+        <!ELEMENT data (#PCDATA)>
+        <!ELEMENT totalFactura (#PCDATA)>
+        <!ELEMENT cliente EMPTY>
+            <!ATTLIST cliente nome CDATA #REQUIRED>
+            <!ATTLIST cliente email CDATA #IMPLIED>
+        <!ELEMENT lineaFactura (producto,cantidade,precio,total)>
+            <!ELEMENT producto (#PCDATA)>
+            <!ELEMENT cantidade (#PCDATA)>
+            <!ELEMENT precio (#PCDATA)>
+            <!ELEMENT total (#PCDATA)>

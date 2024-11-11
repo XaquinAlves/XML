@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mensaxesTexto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="proba1.xsd">
+    <mensaxe>
+        <numTlf>666 666 666</numTlf>
+        <dataEnvio>1999-03-31</dataEnvio>
+        <horaEnvio>12:30:00</horaEnvio>
+        <contido>Hola</contido>
+    </mensaxe>
+</mensaxesTexto>
