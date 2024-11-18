@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="exercicio1.xsd"
+    dni="37787031F">
+    <nombre>Pepe</nombre>
+    <direccion>
+        <calle>Calle falsa</calle>
+        <numero>123</numero>
+        <ciudad>Vigo</ciudad>
+        <provincia>Pontevedra</provincia>
+    </direccion>
+    <telefono>6777766677</telefono>
+</alumno>

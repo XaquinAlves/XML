@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="tarefa2.xsd">
+    <alumno IES="Pazo da Merce">
+        <nombre>Pepe</nombre>
+        <direccion ciudad="Vigo">Calle falsa 123</direccion>
+        <direccion ciudad="Pontevedra">Calle falsa 456</direccion>
+        <telefono>666671366</telefono>
+    </alumno>
+    <alumno IES="Salvaterra de Miño">
+        <nombre>Manuel</nombre>
+        <direccion ciudad="Vigo">Calle verdadera 987</direccion>
+        <telefono>655555555</telefono>
+        <telefono>677777777</telefono>
+    </alumno>
+</alumnos>

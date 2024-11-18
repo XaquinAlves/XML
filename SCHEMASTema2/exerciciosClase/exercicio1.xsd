@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!--alumno es el elemento raíz y tiene 1 atriuto y varios elementos-->
+    <xs:element name="alumno">
+        <xs:complexType>
+            <!--alumno tiene varios subelementos que se tienes que introducir en el orden indicado-->
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="direccion" minOccurs="1" maxOccurs="1" />
+                <xs:element name="telefono" type="xs:integer" minOccurs="0" maxOccurs="5" />
+            </xs:sequence>
+            <!--Este atributo tiene restricciones-->
+            <xs:attribute name="dni" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[0-9]{8}[A-Z]" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <!--Se define el tipo que se usa en el 2º elemento de la secuencia anterior-->
+    <xs:element name="direccion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="calle" type="xs:string" minOccurs="1" maxOccurs="1" />
+                <xs:element name="numero" minOccurs="1" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="0" />
+                            <xs:maxInclusive value="500" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="ciudad" type="xs:string" minOccurs="1" maxOccurs="1" />
+                <xs:element name="provincia" type="xs:string" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

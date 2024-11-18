@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nota xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation= "Tarefa1-1.xsd"
+    tipo="Persoal">
+    <para>Pedro</para>
+    <de>Laura</de>
+    <titulo>Recordatorio</titulo>
+    <contenido>As 7:00 PM na porta do teatro</contenido>
+</nota>
