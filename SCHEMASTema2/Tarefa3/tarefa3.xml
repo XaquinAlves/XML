@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viaxes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="tarefa3.xsd"> 
+        <viaxe>
+            <data>1999-09-09</data>
+            <kilometros>220</kilometros>
+            <medio_de_transporte>moto</medio_de_transporte>
+        </viaxe>
+        <viaxe>
+            <data>2005-03-31</data>
+            <kilometros>550</kilometros>
+            <medio_de_transporte>avion</medio_de_transporte>
+        </viaxe>
+</viaxes>

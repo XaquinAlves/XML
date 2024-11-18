@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="viaxes" type="tipoViaxes"/>
+
+    <xs:complexType name="tipoViaxes">
+        <xs:sequence>
+            <xs:element ref="viaxe" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="viaxe">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="data" type="xs:date"/>
+                    <xs:element name="kilometros" type="xs:integer"/>
+                    <xs:element ref="medio_de_transporte"/>
+                </xs:sequence>
+            </xs:complexType>
+    </xs:element>
+    <xs:element name="medio_de_transporte">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="moto"/>
+                <xs:enumeration value="coche"/>
+                <xs:enumeration value="tren"/>
+                <xs:enumeration value="avion"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>
