@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:group name="monitorGroup1">
+        <xs:sequence>
+            <xs:element ref="tamaño" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="precio" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="monitorGroup2">
+        <xs:sequence>
+            <xs:element ref="precio" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="tamaño" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="tarjetaGroup">
+        <xs:sequence>
+            <xs:element ref="memoria" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="precio" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:group>
+
+    <xs:element name="listacomponentes">
+        <xs:complexType>
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="tarjeta_grafica" type="componente" />
+                <xs:element name="monitor" type="componente" />
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="componente">
+        <xs:choice>
+            <xs:group ref="monitorGroup1" />
+            <xs:group ref="monitorGroup2" />
+            <xs:group ref="tarjetaGroup" />
+        </xs:choice>
+        <xs:attribute name="codigo" type="tipoCodigo" use="required">
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoCodigo">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="6" />
+            <xs:maxLength value="6" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="tamaño" type="xs:int"/>
+
+    <xs:element name="memoria">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:int">
+                    <xs:attribute name="unidad" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="GB" />
+                                <xs:enumeration value="TB" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="precio">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:decimal">
+                    <xs:attribute name="moneda" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="EURO"/>
+                                <xs:enumeration value="DOLAR"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
