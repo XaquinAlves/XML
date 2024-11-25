@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tarefa4.xsd">
+    <libro>
+        <titulo>El Hobbit</titulo>
+        <editorial>minutauro</editorial>
+        <autor>J.R.R. Tolkien</autor>
+    </libro>
+    <libro>
+        <autor>F. Ibañez</autor>
+        <titulo>Rompetechos</titulo>
+        <editorial>Anaya</editorial>
+    </libro>
+    <libro>
+        <editorial>Booket</editorial>
+        <autor>Dmitry Glukhovsky</autor>
+        <titulo>Metro 2033</titulo>
+    </libro>
+</biblioteca>

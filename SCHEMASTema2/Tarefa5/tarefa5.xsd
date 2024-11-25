@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="canciones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cancion" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="titulo" type="xs:string" />
+                            <xs:element name="compositores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="compositor" type="xs:string" minOccurs="1"
+                                            maxOccurs="5" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="productores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="productor" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="sello" type="xs:string" />
+                            <xs:element name="artista" type="tipoArtista" />
+                            <xs:element name="publicacion">
+                                <xs:complexType>
+                                    <xs:attribute name="publicada">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Si"/>
+                                                <xs:enumeration value="No"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:all>
+                        <xs:attribute name="duracion" type="xs:time" />
+                        <xs:attribute name="anho" type="xs:int" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="tipoArtista">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="pais_de_origen" type="xs:string" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>
