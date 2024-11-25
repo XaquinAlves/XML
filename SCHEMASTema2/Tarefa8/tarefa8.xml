@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ordenadores xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="tarefa8.xsd">
+    
+    <sistemaoperativo codigo="2WXP">Windows XP</sistemaoperativo>
+    <sistemaoperativo codigo="W7">Windows 7</sistemaoperativo>
+    <sistemaoperativo codigo="W7">Windows 10</sistemaoperativo>
+    <sistemaoperativo codigo="W7">Windows 18.04</sistemaoperativo>
+    <taller>
+        <codigo>10</codigo>
+        <lugar>Planta 1</lugar>
+        <numServidores>30</numServidores>
+    </taller>
+    <sala impresora="true">
+        <codigo>10</codigo>
+        <lugar>Planta 1</lugar>
+        <numOrdenadores>30</numOrdenadores>
+    </sala>
+    <ordenador numero="200.300.123">
+        <sistemaoperativo codigo="pepe" />
+    </ordenador>
+</ordenadores>

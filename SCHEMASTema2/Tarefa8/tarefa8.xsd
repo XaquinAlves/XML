@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="ordenadores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sistemaoperativo" minOccurs="1" maxOccurs="unbounded" />
+                <xs:element ref="taller" />
+                <xs:element ref="sala" />
+                <xs:element ref="ordenador" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sistemaoperativo">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="codigo" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="taller" type="tipoSala" />
+
+    <xs:element name="sala" type="tipoSala" />
+
+    <xs:complexType name="tipoSala">
+        <xs:sequence>
+            <xs:element ref="codigo" />
+            <xs:element ref="lugar" />
+            <xs:choice>
+                <xs:element ref="numServidores" />
+                <xs:element ref="numOrdenadores" />
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="impresora" type="tipoImpresora" use="optional" />
+    </xs:complexType>
+
+    <xs:simpleType name="tipoImpresora">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="true" />
+            <xs:enumeration value="false" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="numOrdenadores">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minExclusive value="20" />
+                <xs:maxInclusive value="40" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="numServidores" type="xs:int" />
+    <xs:element name="codigo" type="xs:int" />
+    <xs:element name="lugar" type="xs:string"/>
+
+    <xs:element name="ordenador">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sistemaoperativo"/>
+            </xs:sequence>
+            <xs:attribute name="numero" type="tipoNumero"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="tipoNumero">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="200.300.[0-9]{0,1}[0-9]{0,1}[0-9]{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
