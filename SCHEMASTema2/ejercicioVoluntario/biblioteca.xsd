@@ -94,7 +94,7 @@
 
     <xs:simpleType name="idMember">
         <xs:restriction base="xs:string">
-            <xs:pattern value="M\d\d\d" />
+            <xs:pattern value="M\d{3}"/>
         </xs:restriction>
     </xs:simpleType>
 
