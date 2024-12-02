@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+    <book id="B001" availability="available">
+        <title>Las que no duermen</title>
+        <author firstName="Dolores" lastName="Redondo"/>
+        <year>2024</year>
+        <genre>fiction</genre>
+    </book>
+    <book id="B002" availability="checked_out">
+        <title>545 recetas para triunfar</title>
+        <author firstName="Karlos" lastName="Arguiñano"/>
+        <year>2024</year>
+        <rating>4.9</rating>
+    </book>
+    <staff>
+        <member id="M001" role="librarian">
+            <name>Fernando Fernandez Fernandez</name>
+        </member>
+        <member id="M002" role="assistant">
+            <name>Antonio Perez Lopez</name>
+        </member>
+        <member id="M003" role="volunteer">
+            <name>Maria Puente Barca</name>
+        </member>
+    </staff>
+</library>

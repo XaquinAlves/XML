@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="library">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="book" minOccurs="1" maxOccurs="unbounded" />
+                <xs:element ref="staff" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="tipoTitulo" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="author" minOccurs="1" maxOccurs="unbounded" />
+                <xs:element name="year" type="tipoAno" minOccurs="1" maxOccurs="1" />
+                <xs:element name="genre" type="tipoGenero" minOccurs="0" maxOccurs="1" />
+                <xs:element name="rating" type="tipoRating" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+            <xs:attribute name="id" type="idBook" />
+            <xs:attribute name="availability" type="tipoDisponible" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="staff">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="member" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="member">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="id" type="idMember" />
+            <xs:attribute name="role" type="tipoRol" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="tipoTitulo">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+            <xs:maxLength value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="author">
+        <xs:complexType>
+            <xs:attribute name="firstName" type="xs:string" use="required" />
+            <xs:attribute name="lastName" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="tipoAno">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1500" />
+            <xs:maxInclusive value="2024" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoGenero">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="fiction" />
+            <xs:enumeration value="non-fiction" />
+            <xs:enumeration value="fantasy" />
+            <xs:enumeration value="biography" />
+            <xs:enumeration value="science" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoRating">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.0" />
+            <xs:maxInclusive value="5.0" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idBook">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="B\d\d\d" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoDisponible">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="available" />
+            <xs:enumeration value="checked_out"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idMember">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="M\d\d\d" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoRol">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="librarian"/>
+            <xs:enumeration value="assistant"/>
+            <xs:enumeration value="volunteer"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
