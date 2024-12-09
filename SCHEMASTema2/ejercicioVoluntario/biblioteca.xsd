@@ -74,6 +74,8 @@
 
     <xs:simpleType name="tipoRating">
         <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="2" />
+            <xs:fractionDigits value="1" />
             <xs:minInclusive value="0.0" />
             <xs:maxInclusive value="5.0" />
         </xs:restriction>
@@ -94,15 +96,15 @@
 
     <xs:simpleType name="idMember">
         <xs:restriction base="xs:string">
-            <xs:pattern value="M\d{3}"/>
+            <xs:pattern value="M\d{3}" />
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="tipoRol">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="librarian"/>
-            <xs:enumeration value="assistant"/>
-            <xs:enumeration value="volunteer"/>
+            <xs:enumeration value="librarian" />
+            <xs:enumeration value="assistant" />
+            <xs:enumeration value="volunteer" />
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>

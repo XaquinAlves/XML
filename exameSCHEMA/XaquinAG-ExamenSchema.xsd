@@ -1,0 +1,111 @@
+<?xml version="1.0" enconding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="recetas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="receta" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="realizadas" minOccurs="0" maxOccurs="1"/>
+			<xs:sequence/>
+		<xs:complexType/>
+	<xs:element/>
+
+	<xs:element name="receta">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="tipoNombre" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="ingredientes" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="realizacion" minOccurs="1" maxOccurs="1" />
+			<xs:sequence/>
+			<xs:attribute name="tiempoRealizacion" type="tipoTiempoRealizacion" use="required"/>
+			<xs:attribute name="codigo" type="tipoCodigo" use="required"/>
+		<xs:complexType/>
+	<xs:element/>
+
+	<xs:simpleType name="tipoNombre">
+		<xs:restrinction base="xs:string">
+			<xs:minLength value="2"/>
+			<xs:maxLength value="50"/>
+		<xs:restrinction/>
+	<xs:simpleType/>
+
+	<xs:element name="ingredientes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ingrediente" type="tipoIngrediente" minOccurs="1" maxOccurs="unbounded" />
+			<xs:sequence/>
+		<xs:complexType/>
+	<xs:element/>
+
+	<xs:complexType name="tipoIngrediente">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="cantidad" type="tipoCantidad" use="required"/>
+				<xs:attribute name="unidades" type="tipoUnidades" use="optional"/>
+			<xs:extension/>
+		<xs:simpleContent/>
+	<xs:complexType/>
+
+	<xs:simpleType name="tipoCantidad">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="2"/>
+		<xs:restriction/>
+	<xs:simpleType/>
+
+	<xs:simpleType name="tipoUnidades">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="gramos"/>
+			<xs:enumeration value="botes"/>
+			<xs:enumeration value="vasos"/>
+			<xs:enumeration value="tazas"/>
+			<xs:enumeration value="cucharadas"/>
+			<xs:enumeration value="cucharaditas"/>
+			<xs:enumeration value="pizcas"/>
+		<xs:restriction/>
+	<xs:simpleType/>
+
+	<xs:element name="realizacion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="paso" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:sequence/>
+		<xs:complexType/>
+	<xs:element/>
+
+	<xs:simpleType name="tipoTiempoRealizacion">
+		<xs:restriction base="xs:int">
+			<xs:minIncluded value="5"/>
+			<xs:maxIncluded value="360"/>
+		<xs:restriction/>
+	<xs:simpleType/>
+
+	<xs:simpleType name="tipoCodigo" >
+		<xs:restriction base="xs:ID">
+			<xs:pattern value="[E|F|P]\d{2}\-\[A-Z]\d{2}" />
+		<xs:restriction/>
+	<xs:simpleType/>
+
+	<xs:element name="realizadas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="receta" minOccurs="0" maxOccurs="unbounded" >
+					<xs:complexType>
+						<xs:attribute name="ref" type="tipoRecetaRef" use="required"/>
+						<xs:attribute name="fecha" type="xs:date" use="optional" />
+					<xs:complexType>
+				<xs:element/>
+			<xs:sequence/>
+		<xs:complexType/>
+	<xs:element/>
+
+	<xs:simpleType name="tipoRecetaRef">
+		<xs:restriction base="xs:IDREF">
+			<xs:pattern value="[E|F|P]\d{2}\-\[A-Z]\d{2}" />
+		<xs:restriction/>
+	<xs:simpleType/>
+	
+<xs:schema/>
+
+
+
+

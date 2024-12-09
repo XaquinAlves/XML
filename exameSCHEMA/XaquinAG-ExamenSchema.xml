@@ -1,0 +1,38 @@
+<?xml version="1.0" enconding="UTF-8"?>
+<recetas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XaquinAG-ExameSchema.xsd">
+	<receta tiempoRealizacion="15" codigo="E01-A01">
+		<nombre>Spaguetti aglio e olio<nombre/>
+		<ingredientes>
+			<ingrediente cantidad="160" unidades="gramos">Speguetti<ingrediente/>
+			<ingrediente cantidad="3">Diente de ajo<ingrediente/>
+			<ingrediente cantidad="1" unidades="pizcas">Copos de chile<ingrediente/>
+			<ingrediente cantidad="5" unidades="pizcas">Perejil<ingrediente/>
+		<ingredientes/>
+		<realizacion>
+			<paso>Poner agua a hervir con una pizca generosa de sal<paso/>
+			<paso>Laminar el ajo<paso/>
+			<paso>Poner el aceite a calentar en una sarten con el ajo y los chiles<paso/>
+			<paso>Cocer la pasta 2 minutos menos de lo indicado<paso/>
+			<paso>pasar la pasta a la sarten con un poco de agua de coccion<paso/>
+			<paso>Terminar de cocer(2-3 minutos) y emplatar<paso/>
+		<realizacion/>
+	<receta/>
+	<receta tiempoRealizacion="60" codigo="P01-X31">
+		<nombre>Tarta de limos y soledad<nombre/>
+		<ingrediente cantidad="2" unidades="botes">Galletas Tostada<ingrediente/>
+		<ingrediente cantidad="100" unidades="gramos">Mantequilla<ingrediente/>
+		<ingrediente cantidad="4">Limones<ingrediente/>
+		<ingrediente cantidad="2" unidades="botes">Nata para montar<ingrediente/>
+		<realizacion>
+			<paso>Triturar finamente las galletas<paso/>
+			<paso>Fundir la mantequilla<paso/>
+			<paso>Juntar las galletas trituradas con la mantequilla y formar la base en el molde<paso/>
+			<paso>Hecharle a la nata el zumo de 2/4 limones y la rayadura de 1/2 limones<paso/>
+			<paso>Con la nata y las varillas bien frias, montar la nata<paso/>
+			<paso>Con una lengua pastelera esparcir una buena capa de nata sobre la base y guardar en nevera<paso/>
+		<realizacion/>
+	<receta/>
+	<realizadas>
+		<receta ref="E01-A01" fecha="03-05-2020">
+	<realizadas/>
+<recetas/>
