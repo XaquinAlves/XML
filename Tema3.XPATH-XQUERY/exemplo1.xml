@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<libreria>
-    <libro>
-        <autor>Gerald Durrel</autor>
-        <titulo>Un zoo en la isla</titulo>
+<biblioteca>
+    <libro ISBN="84-206-6628-9">
+        <autor fecnac="07/01/1925">Guerald Durrel</autor>
+        <titulo>Mi familia y otros animales</titulo>
         <precio>50.0</precio>
     </libro>
-    <libro>
+    <libro ISBN="64-206-7728-9">
         <autor>Miguel de Unamuno</autor>
         <titulo>Niebla</titulo>
         <precio>40.0</precio>
     </libro>
-    <libro>
-        <autor>Castelao</autor>
-        <titulo>Cousas</titulo>
+    <libro ISBN="34-106-6628-5">
+        <autor>Miguel de Unamuno</autor>
+        <titulo>La Tía Tula</titulo>
         <precio>23.0</precio>
     </libro>
-    <libro>
-        <autor>George Orwell</autor>
+    <libro ISBN="44-786-6348-2">
+        <autor fecnac="25/06/1903">George Orwell</autor>
         <titulo>1984</titulo>
         <precio>20.0</precio>
     </libro>
-</libreria>
+</biblioteca>
