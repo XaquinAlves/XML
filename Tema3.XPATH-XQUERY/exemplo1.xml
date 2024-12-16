@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+    <libro>
+        <autor>Gerald Durrel</autor>
+        <titulo>Un zoo en la isla</titulo>
+        <precio>50.0</precio>
+    </libro>
+    <libro>
+        <autor>Miguel de Unamuno</autor>
+        <titulo>Niebla</titulo>
+        <precio>40.0</precio>
+    </libro>
+    <libro>
+        <autor>Castelao</autor>
+        <titulo>Cousas</titulo>
+        <precio>23.0</precio>
+    </libro>
+    <libro>
+        <autor>George Orwell</autor>
+        <titulo>1984</titulo>
+        <precio>20.0</precio>
+    </libro>
+</libreria>

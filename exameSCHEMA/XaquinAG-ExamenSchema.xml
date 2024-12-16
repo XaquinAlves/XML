@@ -1,4 +1,4 @@
-<?xml version="1.0" enconding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <recetas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XaquinAG-ExameSchema.xsd">
 	<receta tiempoRealizacion="15" codigo="E01-A01">
 		<nombre>Spaguetti aglio e olio<nombre/>

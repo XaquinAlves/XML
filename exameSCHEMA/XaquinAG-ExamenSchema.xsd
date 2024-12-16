@@ -1,4 +1,4 @@
-<?xml version="1.0" enconding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	
 	<xs:element name="recetas">
@@ -23,11 +23,11 @@
 	<xs:element/>
 
 	<xs:simpleType name="tipoNombre">
-		<xs:restrinction base="xs:string">
+		<xs:restriction base="xs:string">
 			<xs:minLength value="2"/>
 			<xs:maxLength value="50"/>
-		<xs:restrinction/>
-	<xs:simpleType/>
+		</xs:restriction>
+	</xs:simpleType>
 
 	<xs:element name="ingredientes">
 		<xs:complexType>
@@ -49,8 +49,8 @@
 	<xs:simpleType name="tipoCantidad">
 		<xs:restriction base="xs:decimal">
 			<xs:fractionDigits value="2"/>
-		<xs:restriction/>
-	<xs:simpleType/>
+		</xs:restriction>
+	</xs:simpleType>
 
 	<xs:simpleType name="tipoUnidades">
 		<xs:restriction base="xs:string">
@@ -61,7 +61,7 @@
 			<xs:enumeration value="cucharadas"/>
 			<xs:enumeration value="cucharaditas"/>
 			<xs:enumeration value="pizcas"/>
-		<xs:restriction/>
+		</xs:restriction>
 	<xs:simpleType/>
 
 	<xs:element name="realizacion">
@@ -76,13 +76,13 @@
 		<xs:restriction base="xs:int">
 			<xs:minIncluded value="5"/>
 			<xs:maxIncluded value="360"/>
-		<xs:restriction/>
+		</xs:restriction>
 	<xs:simpleType/>
 
 	<xs:simpleType name="tipoCodigo" >
 		<xs:restriction base="xs:ID">
 			<xs:pattern value="[E|F|P]\d{2}\-\[A-Z]\d{2}" />
-		<xs:restriction/>
+		</xs:restriction>
 	<xs:simpleType/>
 
 	<xs:element name="realizadas">
@@ -101,11 +101,7 @@
 	<xs:simpleType name="tipoRecetaRef">
 		<xs:restriction base="xs:IDREF">
 			<xs:pattern value="[E|F|P]\d{2}\-\[A-Z]\d{2}" />
-		<xs:restriction/>
+		</xs:restriction>
 	<xs:simpleType/>
 	
-<xs:schema/>
-
-
-
-
+</xs:schema>
