@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cursosEmpresa>
+  <nomeEmpresa>Xunta de Galicia</nomeEmpresa>
+
+  <curso nome="C#" data="Marzo-08" nivel="medio">
+   <!-- Comezará o día 20 -->
+   <alumno>							
+     <nome>Pepe</nome> 					
+     <apelido>Pérez</apelido> 					
+     <enderezo>c/A rosa 25, 1ºDcha</enderezo>				
+   </alumno>							
+   <alumno>							
+     <nome>Perico</nome> 					
+     <apelido>Dos Palotes</apelido> 			
+     <enderezo>c/Algunha 11 Baixo</enderezo>				
+   </alumno>							
+  </curso>
+
+<curso nome="Mono" data="Abril-09" nivel="baixo">
+   <alumno>							
+     <nome>Ricardo</nome> 					
+     <apelido>Sánchez</apelido> 					
+     <enderezo>c/Alfredo Brañas 12, 7ºD</enderezo>				
+   </alumno>							
+   <alumno>							
+     <nome>Armando</nome> 					
+     <apelido>Rodríguez</apelido> 			
+     <enderezo>c/Pintor Tenorio 5, 6ºA </enderezo>				
+   </alumno>							
+  </curso>								
+
+  <curso nome="Xava" data="Abril-09"> 
+   <!-- Aínda non está confirmado -->
+   <alumno>
+      <nome>Jose</nome> 
+      <apelido>López</apelido>
+   </alumno> 
+   <alumno>
+      <nome>Faustino</nome> 
+      <apelido>Domínguez</apelido> 
+      <enderezo>c/A Paz 30</enderezo>
+   </alumno>
+  </curso>
+
+  <curso nome="XML" data="Setembro-09"/> 
+
+</cursosEmpresa>
