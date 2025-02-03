@@ -40,7 +40,7 @@
     </máquina>
     <máquina nome="PR003">
         <hardware>
-            <tipo>Impresora Inyección</tipo>
+            <tipo>Impresora de Inyección</tipo>
             <fabricante>Lexmark</fabricante>
         </hardware>
         <config />
